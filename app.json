@@ -3,5 +3,13 @@
   "description": "Show how the redis works with Spring(java).",
   "repository": "https://github.com/",
   "logo": "https://redis.io/images/redis-white.png",
-  "keywords": ["java", "spring", "redis"]
+  "keywords": ["java", "spring", "redis"],
+  "hooks": {
+    "prebuild": {
+      "commands": [
+        "echo 'prebuild'",
+        "bash prebuildRedis"
+      ]
+    }
+  }
 }
